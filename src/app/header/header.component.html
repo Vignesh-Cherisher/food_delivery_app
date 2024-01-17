@@ -1,0 +1,26 @@
+<div class="header-container">
+  <div class="title-container">
+    <img src="../../assets/images/Logo.png" alt="Logo" class="title-logo">
+    <h1 class="title-text">Solito</h1>
+  </div>
+  <div class="search-container">
+    <div class="search-option-container">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <select name="city-select" id="city-select-dropdown" class="city-select">
+        <option value="Chennai">Chennai</option>
+      </select>
+    </div>
+    <p class="search-separator">|</p>
+    <div class="search-bar-container">
+      <input type="text" [placeholder]="searchPlaceHolder" class="search-bar" #searchBar>
+    </div>
+  </div>
+  <div class="header-options-container">
+    <app-shopping-cart [iconStatus]="iconDescStatus"></app-shopping-cart>
+    <app-order-history [iconStatus]="iconDescStatus"></app-order-history>
+    <div class="logout-container header-options">
+      <i class="fa-solid fa-right-from-bracket"></i>
+      <p *ngIf="iconDescStatus" class="logout-text icon-description">Logout</p>
+    </div>
+  </div>
+</div>
