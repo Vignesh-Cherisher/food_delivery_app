@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="filter-container" (click)="openFilterDialog()">
+    <i class="fa-solid fa-filter"></i>
+    <p class="filter-text">Filter</p>
+  </div>
+  <p class="rating-filter filter-container"
+    [ngClass]= "{ 'active-filter': isFilteredOnRating }"
+    (click)="applyRatingFilter()">
+    Rating 4.0+
+    <i class="fa-solid fa-xmark" *ngIf="isFilteredOnRating"></i>
+  </p>
+  <p class="vegetarian-filter filter-container">Pure Veg</p>
+</div>
+

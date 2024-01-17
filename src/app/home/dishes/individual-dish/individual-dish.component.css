@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.dish-image {
+  max-width: 200px;
+  border-radius: 50%;
+}
+

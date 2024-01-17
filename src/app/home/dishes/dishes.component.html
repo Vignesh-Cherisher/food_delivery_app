@@ -1,0 +1,10 @@
+<div class="container">
+  <h2 class="dishes-title-text">Explore Top Dishes</h2>
+  <div class="controller-dishes-container">
+    <i class="fa-solid fa-caret-left" (click) = "scrollOnClick('left')"></i>
+    <div class="dishes-container" #dishContainer>
+      <app-individual-dish *ngFor="let dish of topDishes" [dishItem]="dish"></app-individual-dish>
+    </div>
+    <i class="fa-solid fa-caret-right"(click) = "scrollOnClick('right')"></i>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  background-color: var(--light-font-color);
+  color: var(--dark-font-color);
+  padding: 0.5rem 1rem;
+}
+
+.filter-container{
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-right: 0.7rem;
+  border-radius: 0.2rem;
+}
+
+.filter-container:hover {
+  filter: brightness(2);
+}
+
+.fa-filter {
+  margin-right: 0.2rem;
+}
+
+.active-filter {
+  border: 1px solid red;
+  color: var(--light-font-color);
+  background-color: red;
+  padding-left: 0.3rem;
+}
+
+.fa-xmark {
+  margin-left: 0.3rem;
+}
