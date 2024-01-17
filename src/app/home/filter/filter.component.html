@@ -9,6 +9,11 @@
     Rating 4.0+
     <i class="fa-solid fa-xmark" *ngIf="isFilteredOnRating"></i>
   </p>
-  <p class="vegetarian-filter filter-container">Pure Veg</p>
+  <p class="vegetarian-filter filter-container"
+    [ngClass]= "{ 'active-filter': isFilteredOnVeg }"
+    (click)="applyVegFilter()">
+    Pure Veg
+    <i class="fa-solid fa-xmark" *ngIf="isFilteredOnVeg"></i>
+  </p>
 </div>
 

@@ -12,6 +12,7 @@ import { DishesComponent } from './home/dishes/dishes.component';
 import { RestaurantsComponent } from './home/restaurants/restaurants.component';
 import { FooterComponent } from './footer/footer.component';
 import { IndividualDishComponent } from './home/dishes/individual-dish/individual-dish.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { IndividualDishComponent } from './home/dishes/individual-dish/individua
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

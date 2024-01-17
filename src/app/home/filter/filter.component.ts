@@ -6,12 +6,18 @@ import { Component } from '@angular/core';
   styleUrl: './filter.component.css'
 })
 export class FilterComponent {
-[x: string]: any;
-  isFilteredOnRating:boolean = false;
+  isFilteredOnRating: boolean = false;
+  isFilteredOnVeg: boolean = false;
+
   applyRatingFilter() {
     this.isFilteredOnRating = !this.isFilteredOnRating;
   }
+
+  applyVegFilter() {
+    this.isFilteredOnVeg = !this.isFilteredOnVeg;
+  }
+
   openFilterDialog() {
-    
+
   }
 }

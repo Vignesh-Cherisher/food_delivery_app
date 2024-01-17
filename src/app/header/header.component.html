@@ -5,12 +5,14 @@
   </div>
   <div class="search-container">
     <div class="search-option-container">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <select name="city-select" id="city-select-dropdown" class="city-select">
-        <option value="Chennai">Chennai</option>
+      <i class="fa-solid fa-location-crosshairs"></i>
+      <select name="city-select" id="city-select-dropdown" class="city-select" #citySelection (change) = onSelected(citySelection.value)>
+        <option value="Chennai" default>Chennai</option>
+        <option value="Coimbatore">Coimbatore</option>
       </select>
     </div>
     <p class="search-separator">|</p>
+    <i class="fa-solid fa-magnifying-glass"></i>
     <div class="search-bar-container">
       <input type="text" [placeholder]="searchPlaceHolder" class="search-bar" #searchBar>
     </div>
