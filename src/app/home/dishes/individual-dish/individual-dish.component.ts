@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Dish } from '../dish.model';
 
 @Component({
   selector: 'app-individual-dish',
@@ -6,6 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './individual-dish.component.css',
 })
 export class IndividualDishComponent {
-  @Input() dishItem: { imagePath: string, dishName: string }
-  
+  @Input() dishItem: Dish;
+
 }

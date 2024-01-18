@@ -18,8 +18,14 @@
     </div>
   </div>
   <div class="header-options-container">
-    <app-shopping-cart [iconStatus]="iconDescStatus"></app-shopping-cart>
-    <app-order-history [iconStatus]="iconDescStatus"></app-order-history>
+    <div class="cart-container header-options">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <p *ngIf="iconDescStatus" class="cart-text icon-description">Cart</p>
+    </div>
+    <div class="order-container header-options">
+      <i class="fa-solid fa-clock"></i>
+      <p *ngIf="iconDescStatus" class="order-text icon-description">Orders</p>
+    </div>
     <div class="logout-container header-options">
       <i class="fa-solid fa-right-from-bracket"></i>
       <p *ngIf="iconDescStatus" class="logout-text icon-description">Logout</p>

@@ -1,3 +1,6 @@
 <div class="container">
-  <h2 class="title-text">Top Restaurants from {{ cityName }}</h2>
+  <h2 class="title-text">Explore Restaurants from {{ cityName }}</h2>
+</div>
+<div class="container restaurant-container">
+  <app-restaurant-item *ngFor="let restaurant of cityRestaurants" [restaurantItem] = "restaurant"></app-restaurant-item>
 </div>

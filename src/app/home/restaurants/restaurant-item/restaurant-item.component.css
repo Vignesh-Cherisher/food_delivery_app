@@ -1,0 +1,80 @@
+.container {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container:hover {
+  border-radius: 0.5rem;
+  background-color: #F4EEFF;
+  border: 1px solid rgba(0, 0, 0, 0.337);
+  transform: scale(1.05);
+}
+
+.hide-container {
+  overflow: hidden;
+}
+
+.hide-container:hover {
+  width: fit-content;
+}
+
+.restaurant-logo-container {
+  border-radius: 0.8rem;
+  margin-bottom: 0.5rem;
+  background-size: cover;
+  width: 200px;
+  height: 250px;
+}
+
+.background-logo {
+  background-size: cover;
+}
+
+.restaurant-logo {
+  height: 250px;
+  width: 80%;
+  border-radius: 0.8rem;
+  max-width: 325px;
+  min-width: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-detail-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 325px;
+  margin-bottom: 0.3rem;
+}
+
+.restaurant-name {
+  font-size: 1rem;
+}
+
+.rating-container {
+  display: flex;
+  background-color: var(--component-bg);
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  height: fit-content;
+}
+
+.restaurant-rating {
+  margin-right: 0.3rem;
+}
+
+.restaurant-address {
+  width: 80%;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+@media (width < 800px) {
+  .restaurant-address, .restaurant-detail-container {
+    width: 100%;
+  }
+}

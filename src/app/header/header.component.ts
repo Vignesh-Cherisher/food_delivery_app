@@ -5,7 +5,6 @@ import { crossCommunicationService } from '../services/crossCommunication.servic
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
-  providers: [crossCommunicationService]
 })
 
 export class HeaderComponent implements OnInit {

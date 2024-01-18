@@ -1,0 +1,56 @@
+.container {
+  background-color: black;
+  color: var(--light-font-color);
+  padding: 1rem 2rem;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.title-text {
+  font-family: 'Oswald',serif;
+  font-size: 1.5rem;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.social-link-container {
+  width: 150px;
+}
+
+.social-link-text {
+  margin-bottom: 0.5rem;
+}
+
+.download-link-image {
+  height: 3rem;
+  width: 150px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-brands {
+  cursor: pointer;
+}
+
+.copyright-text {
+  margin-top: 0.5rem;
+}

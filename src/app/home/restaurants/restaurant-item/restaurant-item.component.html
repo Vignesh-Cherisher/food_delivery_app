@@ -1,0 +1,12 @@
+<div class="container" [ngClass]="{'hide-container' : isContainerShrunk}">
+  <div class="restaurant-logo-container" *ngIf="isContainerShrunk" [ngStyle]="{background: 'url(' + restaurantItem.logoImagePath + ')', 'background-size': 'cover'}"></div>
+  <img [src]="restaurantItem.logoImagePath" [alt]="restaurantItem.Name" class="restaurant-logo" #restaurantLogo *ngIf="!isContainerShrunk">
+  <div class="restaurant-detail-container">
+    <h2 class="restaurant-name">{{ restaurantItem.Name }}</h2>
+    <div class="rating-container">
+      <p class="restaurant-rating">{{ restaurantItem.rating }}</p>
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+  <p class="restaurant-address">{{ restaurantItem.address }}</p>
+</div>
