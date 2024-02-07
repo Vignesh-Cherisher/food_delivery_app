@@ -14,14 +14,17 @@ export class RestaurantsComponent {
   cityRestaurants: Restaurant[];
 
   constructor(private crossCommunicationServ: crossCommunicationService, private cityRestaurantServ: cityRestaurantsService) {
+  console.log('From Constructor')
   }
 
   ngOnInit(): void {
+      console.log('ngOnInit')
     this.cityName = this.crossCommunicationServ.getSelectedCity()
     this.cityRestaurants = this.cityRestaurantServ.getRestaurants()
   }
 
   ngAfterContentChecked(): void {
+      console.log('From ngAftterContent Checked')
     this.cityName = this.crossCommunicationServ.getSelectedCity()
   }
 }
